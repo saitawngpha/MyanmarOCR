@@ -1,5 +1,5 @@
 ## MyanmarOCR for iOS App
-> A lazy people do a simple thing. This is a simple Myanmar OCR with Tesseract-OCR for iOS App.
+> A lazy people do a simple thing. This is a simple Myanmar OCR app with Tesseract-OCR for iOS.
 
 ## Dependencies
 - SwiftyTesseract (Tesseract-OCR)
