@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		752AE2702C88701000968FD8 /* MyanmarOCRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752AE26F2C88701000968FD8 /* MyanmarOCRApp.swift */; };
+		752AE2722C88701000968FD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752AE2712C88701000968FD8 /* ContentView.swift */; };
+		752AE2742C88701100968FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752AE2732C88701100968FD8 /* Assets.xcassets */; };
+		752AE2772C88701100968FD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752AE2762C88701100968FD8 /* Preview Assets.xcassets */; };
+		752AE2802C88710900968FD8 /* OCRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752AE27F2C88710900968FD8 /* OCRViewModel.swift */; };
+		752AE2832C88712A00968FD8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752AE2822C88712A00968FD8 /* ImagePicker.swift */; };
+		752AE51B2C89815300273746 /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = 752AE51A2C89815300273746 /* SwiftyTesseract */; };
+		752AE5252C898AFA00273746 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 752AE5242C898AFA00273746 /* tessdata */; };
+		752AE5282C898C0F00273746 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 752AE5272C898C0F00273746 /* TOCropViewController */; };
+		752AE52A2C898C2900273746 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 752AE5292C898C2900273746 /* CropViewController */; };
+		756348822C887A48003ACB8E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 756348812C887A48003ACB8E /* libstdc++.dylib */; platformFilter = ios; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		752AE26C2C88701000968FD8 /* MyanmarOCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyanmarOCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		752AE26F2C88701000968FD8 /* MyanmarOCRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyanmarOCRApp.swift; sourceTree = "<group>"; };
+		752AE2712C88701000968FD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		752AE2732C88701100968FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		752AE2762C88701100968FD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		752AE27F2C88710900968FD8 /* OCRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewModel.swift; sourceTree = "<group>"; };
+		752AE2822C88712A00968FD8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		752AE2842C88727400968FD8 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		752AE28C2C8876BC00968FD8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		752AE28E2C88785200968FD8 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "../../../Downloads/libstdc-.6.0.9.tbd-master/iPhoneOS/libstdc++.6.0.9.tbd"; sourceTree = "<group>"; };
+		752AE2902C88788A00968FD8 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../../../Downloads/libstdc-.6.0.9.tbd-master/iPhoneSimulator/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
+		752AE5242C898AFA00273746 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		7563487C2C887A00003ACB8E /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator17.5.sdk/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = DEVELOPER_DIR; };
+		756348812C887A48003ACB8E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator17.5.sdk/usr/lib/libstdc++.dylib"; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		752AE2692C88701000968FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756348822C887A48003ACB8E /* libstdc++.dylib in Frameworks */,
+				752AE52A2C898C2900273746 /* CropViewController in Frameworks */,
+				752AE5282C898C0F00273746 /* TOCropViewController in Frameworks */,
+				752AE51B2C89815300273746 /* SwiftyTesseract in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		752AE2632C88701000968FD8 = {
+			isa = PBXGroup;
+			children = (
+				752AE26E2C88701000968FD8 /* MyanmarOCR */,
+				752AE26D2C88701000968FD8 /* Products */,
+				F80C278C83B728F7E91DF1C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		752AE26D2C88701000968FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				752AE26C2C88701000968FD8 /* MyanmarOCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		752AE26E2C88701000968FD8 /* MyanmarOCR */ = {
+			isa = PBXGroup;
+			children = (
+				752AE5242C898AFA00273746 /* tessdata */,
+				752AE2812C88711600968FD8 /* helper */,
+				752AE27E2C8870F800968FD8 /* viewmodel */,
+				752AE27D2C8870EE00968FD8 /* view */,
+				752AE26F2C88701000968FD8 /* MyanmarOCRApp.swift */,
+				752AE2732C88701100968FD8 /* Assets.xcassets */,
+				752AE2752C88701100968FD8 /* Preview Content */,
+			);
+			path = MyanmarOCR;
+			sourceTree = "<group>";
+		};
+		752AE2752C88701100968FD8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				752AE2762C88701100968FD8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		752AE27D2C8870EE00968FD8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				752AE2712C88701000968FD8 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		752AE27E2C8870F800968FD8 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				752AE27F2C88710900968FD8 /* OCRViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		752AE2812C88711600968FD8 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				752AE2822C88712A00968FD8 /* ImagePicker.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		F80C278C83B728F7E91DF1C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756348812C887A48003ACB8E /* libstdc++.dylib */,
+				752AE2902C88788A00968FD8 /* libstdc++.6.0.9.dylib */,
+				7563487C2C887A00003ACB8E /* libstdc++.6.0.9.dylib */,
+				752AE28E2C88785200968FD8 /* libstdc++.6.0.9.tbd */,
+				752AE28C2C8876BC00968FD8 /* libc++.tbd */,
+				752AE2842C88727400968FD8 /* TesseractOCR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		752AE26B2C88701000968FD8 /* MyanmarOCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752AE27A2C88701100968FD8 /* Build configuration list for PBXNativeTarget "MyanmarOCR" */;
+			buildPhases = (
+				752AE2682C88701000968FD8 /* Sources */,
+				752AE2692C88701000968FD8 /* Frameworks */,
+				752AE26A2C88701000968FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyanmarOCR;
+			packageProductDependencies = (
+				752AE51A2C89815300273746 /* SwiftyTesseract */,
+				752AE5272C898C0F00273746 /* TOCropViewController */,
+				752AE5292C898C2900273746 /* CropViewController */,
+			);
+			productName = MyanmarOCR;
+			productReference = 752AE26C2C88701000968FD8 /* MyanmarOCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		752AE2642C88701000968FD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					752AE26B2C88701000968FD8 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 752AE2672C88701000968FD8 /* Build configuration list for PBXProject "MyanmarOCR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 752AE2632C88701000968FD8;
+			packageReferences = (
+				752AE5192C89815300273746 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */,
+				752AE5262C898C0F00273746 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+			);
+			productRefGroup = 752AE26D2C88701000968FD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				752AE26B2C88701000968FD8 /* MyanmarOCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		752AE26A2C88701000968FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752AE2772C88701100968FD8 /* Preview Assets.xcassets in Resources */,
+				752AE2742C88701100968FD8 /* Assets.xcassets in Resources */,
+				752AE5252C898AFA00273746 /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		752AE2682C88701000968FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752AE2802C88710900968FD8 /* OCRViewModel.swift in Sources */,
+				752AE2832C88712A00968FD8 /* ImagePicker.swift in Sources */,
+				752AE2722C88701000968FD8 /* ContentView.swift in Sources */,
+				752AE2702C88701000968FD8 /* MyanmarOCRApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		752AE2782C88701100968FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		752AE2792C88701100968FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		752AE27B2C88701100968FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyanmarOCR/Preview Content\"";
+				DEVELOPMENT_TEAM = 27U2B5MT47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your Camera for OCR.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your Photo Library for OCR.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitawngpha.MyanmarOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		752AE27C2C88701100968FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyanmarOCR/Preview Content\"";
+				DEVELOPMENT_TEAM = 27U2B5MT47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to use your Camera for OCR.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to use your Photo Library for OCR.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitawngpha.MyanmarOCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		752AE2672C88701000968FD8 /* Build configuration list for PBXProject "MyanmarOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752AE2782C88701100968FD8 /* Debug */,
+				752AE2792C88701100968FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		752AE27A2C88701100968FD8 /* Build configuration list for PBXNativeTarget "MyanmarOCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752AE27B2C88701100968FD8 /* Debug */,
+				752AE27C2C88701100968FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		752AE5192C89815300273746 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyTesseract/SwiftyTesseract";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		752AE5262C898C0F00273746 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		752AE51A2C89815300273746 /* SwiftyTesseract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 752AE5192C89815300273746 /* XCRemoteSwiftPackageReference "SwiftyTesseract" */;
+			productName = SwiftyTesseract;
+		};
+		752AE5272C898C0F00273746 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 752AE5262C898C0F00273746 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+		752AE5292C898C2900273746 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 752AE5262C898C0F00273746 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 752AE2642C88701000968FD8 /* Project object */;
+}
