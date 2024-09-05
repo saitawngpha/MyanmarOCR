@@ -7,3 +7,6 @@
 - TOCropViewController (for image crop)
 
 ## Demo
+   Screen 1 | 
+:-------------------------: | 
+<img src="src/1.png" width="300px"> | 
